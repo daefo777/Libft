@@ -6,7 +6,7 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 14:40:18 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/06 19:06:57 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/09 19:50:09 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(const char *src)
 
 	mem_space = ft_strlen(src) + 1;
 	dest = (char *)malloc(mem_space);
-	if (dest == NULL)
+	if (!dest)
 		return (NULL);
 	if (!(res = (char *)ft_memcpy(dest, src, mem_space)))
 	{

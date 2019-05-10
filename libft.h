@@ -6,7 +6,7 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 15:58:06 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/08 19:32:04 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/09 19:46:17 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 void	*ft_memset(void *dest, int val, size_t len);
 void	ft_bzero(void *to, size_t count);
+int		ft_countdigit(int n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
@@ -59,5 +60,14 @@ char	*ft_strtrim(char const *s);
 int		ft_iswhitespace(char c);
 void	ft_storewords(char **fresh, const char *s, char c);
 int     ft_countwords(char const *s, char c);
+char	*ft_itoa(int n);
+void	ft_putendl(char const *s);
+void	ft_putendl_fd(char const *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putnbr(int n);
+void	ft_putstr(char const *s);
+void	ft_putstr_fd(char const *s, int fd);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putchar(char c);
 
 #endif

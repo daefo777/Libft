@@ -6,12 +6,11 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 15:16:04 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/07 13:32:17 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/09 19:48:52 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int		ft_atoi(const char *str)
 {
@@ -36,12 +35,4 @@ int		ft_atoi(const char *str)
 		i++;
 	}
 	return (result * sign);
-}
-
-int		main(void)
-{
-	const char *str = "  	123df";
-
-	printf("%d", ft_atoi(str));
-	return (0);
 }
