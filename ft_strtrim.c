@@ -6,7 +6,7 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 22:04:35 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/07 10:34:15 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/11 14:46:08 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strtrim(char const *s)
 	size_t		start;
 	size_t		end;
 
+	if (!s)
+		return (NULL);
 	start = 0;
 	while (ft_iswhitespace(s[start]))
 		start++;

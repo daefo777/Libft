@@ -6,7 +6,7 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 15:16:04 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/09 19:48:52 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/11 13:37:16 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int		ft_atoi(const char *str)
 		sign = (str[i] == '-') ? -1 : 1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + str[i] - '0';
 		i++;

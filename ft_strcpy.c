@@ -6,12 +6,11 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 22:46:54 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/07 13:08:48 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/11 13:50:04 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strcpy(char *dest, const char *src)
 {
@@ -25,13 +24,4 @@ char	*ft_strcpy(char *dest, const char *src)
 	}
 	dest[i] = '\0';
 	return (dest);
-}
-
-int		main(void)
-{
-	char		*dest = "abcde";
-	const char	*src = "12345";
-
-	printf("%s", ft_strcpy(dest, src));
-	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 21:31:53 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/05 23:25:51 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/11 14:40:59 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ char	*ft_strmap(char const *s, char (*f)(char))
 		fresh[i] = f(s[i]);
 		i++;
 	}
+	fresh[i] = '\0';
 	return (fresh);
 }

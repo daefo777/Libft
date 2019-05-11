@@ -6,23 +6,20 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 09:55:39 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/09 19:48:13 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/11 14:20:16 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strstore(char *fresh, int n, int j, int nbr)
+static char	*ft_strstore(char *fresh, int n, int j, int nbr)
 {
 	int		i;
 	int		tmp;
-	char	*store;
+	char	store[nbr];
 
 	i = 0;
 	tmp = 0;
-	store = (char *)ft_memalloc(nbr);
-	if (!store)
-		return (NULL);
 	while (n > 9)
 	{
 		tmp = n;
@@ -38,7 +35,7 @@ char	*ft_strstore(char *fresh, int n, int j, int nbr)
 	return (fresh);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char	*fresh;
 	int		j;

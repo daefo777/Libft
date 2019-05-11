@@ -6,7 +6,7 @@
 /*   By: idaeho <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 22:27:50 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/10 22:34:02 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/11 13:18:57 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	while (*lst)
+	t_list	*ptr;
+
+	ptr = lst;
+	while (ptr)
 	{
-		f(lst);
-		lst = lst->next;
+		f(ptr);
+		ptr = ptr->next;
 	}
 }

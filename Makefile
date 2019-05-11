@@ -6,7 +6,7 @@
 #    By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/06 16:02:29 by idaeho            #+#    #+#              #
-#    Updated: 2019/05/07 10:16:52 by idaeho           ###   ########.fr        #
+#    Updated: 2019/05/11 13:16:46 by idaeho           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,3 +32,5 @@ fclean: clean
 	@/bin/rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: clean fclean all re
