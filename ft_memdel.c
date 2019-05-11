@@ -6,7 +6,7 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 22:49:21 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/06 19:11:26 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/10 21:09:23 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 void	ft_memdel(void **ap)
 {
-	free(ap);
-	ap = NULL;
+	if (!ap || !*ap)
+		return ;
+	free(*ap);
+	*ap = NULL;
 }
