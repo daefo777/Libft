@@ -6,60 +6,36 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 09:55:39 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/11 14:20:16 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/12 16:34:58 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_strstore(char *fresh, int n, int j, int nbr)
-{
-	int		i;
-	int		tmp;
-	char	store[nbr];
-
-	i = 0;
-	tmp = 0;
-	while (n > 9)
-	{
-		tmp = n;
-		n %= 10;
-		store[i++] = n + '0';
-		n = (tmp - n) / 10;
-		if (n < 10)
-			store[i++] = n + '0';
-	}
-	while (j < nbr)
-		fresh[j++] = store[--i];
-	fresh[j] = '\0';
-	return (fresh);
-}
-
 char		*ft_itoa(int n)
 {
 	char	*fresh;
-	int		j;
+	int		i;
 	int		nbr;
 
-	j = 0;
+	i = 0;
 	nbr = ft_countdigit(n);
 	fresh = ft_strnew(nbr);
 	if (!fresh)
 		return (NULL);
+	fresh[nbr] = 0;
 	if (n == -2147483648)
-	{
-		ft_strncpy(fresh, "-2147483648", nbr + 1);
-		return (fresh);
-	}
+		return (ft_strncpy(fresh, "-2147483648", nbr + 1));
 	else if (n < 0)
 	{
 		n = -n;
-		fresh[j++] = '-';
+		fresh[0] = '-';
+		i++;
 	}
-	if (n >= 0 && n < 10)
+	while (i < nbr--)
 	{
-		fresh[j] = n + '0';
-		return (fresh);
+		fresh[nbr] = (n % 10) + '0';
+		n /= 10;
 	}
-	return (ft_strstore(fresh, n, j, nbr));
+	return (fresh);
 }
