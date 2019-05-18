@@ -6,12 +6,11 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 14:40:18 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/09 19:50:09 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/17 19:40:35 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strdup(const char *src)
 {

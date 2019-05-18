@@ -6,12 +6,11 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 19:18:29 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/11 14:36:27 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/17 19:40:40 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

@@ -6,12 +6,11 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 22:04:35 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/11 14:46:08 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/17 19:41:19 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strtrim(char const *s)
 {

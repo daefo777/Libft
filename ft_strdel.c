@@ -6,12 +6,11 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 16:34:05 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/10 21:09:47 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/17 19:40:31 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	ft_strdel(char **as)
 {

@@ -6,7 +6,7 @@
 /*   By: idaeho <idaeho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 15:58:06 by idaeho            #+#    #+#             */
-/*   Updated: 2019/05/11 15:03:38 by idaeho           ###   ########.fr       */
+/*   Updated: 2019/05/17 19:41:41 by idaeho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 
 # include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 typedef struct		s_list
 {
